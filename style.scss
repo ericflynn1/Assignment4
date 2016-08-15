@@ -1,12 +1,12 @@
 $background: #f4f4f4;
-
-#flex-container {
-    display:flex;
-    flex-direction: row;
-    align-content: center;
-    font-family: 'Titillium Web', sans-serif;
-    list-style-type: none;
-}
+$button: #33a1ff;
+// #flex-container {
+//     display:flex;
+//     flex-direction: row;
+//     align-content: center;
+//     font-family: 'Titillium Web', sans-serif;
+//     list-style-type: none;
+// }
 .graybox {
     background-color: $background;
     font-family: 'Titillium Web', sans-serif;
@@ -14,40 +14,10 @@ $background: #f4f4f4;
     figcaption{
         text-align: center;
     }
-    image{
-        height: 300px;
-    }
-}
-.banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#fa6938;
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    height: 35px;
-    font-size: 13px;
-    text-align: center;
-    padding-left: 80px;
-    padding-right: 500px;
 }
 .whitebox {
     font-family: 'Titillium Web', sans-serif;
     height: 300px;
-}
-.logo {
-    display: flex;
-    justify-content: space-around;
-    padding-left: 40px; 
-    height: 140px;
-    font-size: 24px;
-    align-items: row;
-}
-#logo2 {
-    width: 150px;
-}
-#skinnyties {
-    
 }
 #collection {
     display: flex;
@@ -61,35 +31,12 @@ $background: #f4f4f4;
     padding-left: 50px;
     padding-top: 22px;
 }
-#cart {
-    display: flex;
-    margin: 25px;
-    height: 25px;
-    align-items: row;
-    border: 2px solid $background;
-    margin-bottom: 0;
-    margin-top: 50px;
-    color: gray;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 10px;
-}
+
 #cart-bla {
     margin-right: 10px;
 }
 #magnify-bl {
     margin-right: 20px;
-}
-#magnify {
-    display: flex;
-    height: 25px;
-    align-items: row;
-    border: 2px solid $background;
-    margin-bottom: 0;
-    margin-top: 25px;
-    padding-right: 25px;
-    color: gray;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 10px;
 }
 .bottom {
     height: 175px;
@@ -133,44 +80,6 @@ $background: #f4f4f4;
     align-content: center;
     justify-content: space-between;
 }
-#bowtie {
-    display: inline-block;
-    padding: 15px;
-    padding-top: 35px;
-    object-fit: contain;
-}
-#pocketsquare {
-    display: inline-block;
-    padding: 15px;
-    padding-top: 35px;
-    object-fit: contain;
-}
-h2 {
-  z-index: 100;
-  position: absolute;
-  font-size: 24px;
-  font-weight: bold;
-  left: 240px;
-  top: 50px;
-  margin: 0;
-}
-#tiebars {
-    display: inline-block;
-    padding: 15px;
-    padding-top: 35px;
-    object-fit: contain;
-    margin: 0;
-    position: absolute;
-}
-h2 {
-  z-index: 100;
-  position: absolute;
-  font-size: 24px;
-  font-weight: bold;
-  left: 240px;
-  top: 50px;
-  margin: 0;
-}
 #story-container {
     display: flex;
     height: 50px;
@@ -203,7 +112,7 @@ h2 {
     display: flex;
     align-text: center;
     padding-left: 500px;
-    color: #59b5ff;
+    color: $button;
 }
 .bottom {
     display: flex;
@@ -240,7 +149,7 @@ background-color: $background;
     display: inline-block;
     padding: 3px 10px;
     border: 0;
-    background: #33a1ff;
+    background: $button;
     color: #FFF;
     font-size: 12px;
     font-weight: 600;
@@ -260,51 +169,6 @@ background-color: $background;
     font-size: 1.1em;
     list-style-type: none;
 }
-
-#shopby {
-    display: block;
-    height: 125px;
-    width: 120px;
-    font-size: .8em;
-    text-align: column;
-    text-decoration: none;
-    color: gray;
-    padding: 10px;
-    list-style-type: none;
-}
-#aboutus {
-    display: block;
-    list-style-type: none;
-    padding: 10px;
-    height: 125px;
-    width: 120px;
-    text-align: column;
-    text-decoration: none;
-    color: gray;
-    font-size: .8em;
-}
-#styleguide2 {
-    display: block;
-    padding: 10px;
-    height: 125px;
-    width: 120px;
-    text-align: column;
-    text-decoration: none;
-    color: gray;
-    font-size: .8em;
-    list-style-type: none;
-}
-#help {
-    display: block;
-    padding: 10px;
-    height: 125px;
-    width: 120px;
-    text-align: column;
-    text-decoration: none;
-    color: gray;
-    font-size: .8em;
-    list-style-type: none;
-}
 #contactusheader {
     display: block;
     float: right;
@@ -312,7 +176,6 @@ background-color: $background;
     padding-left: 500px;
     margin-bottom: 30px;
     padding: 15px;
-    border: 1px solid rgba(0,0,0,0.1);
     background: #a2afc0;
     color: #FFF;
     box-sizing: border-box;
@@ -332,7 +195,7 @@ background-color: $background;
 .contactbutton {
     display: inline-block;
     padding: 3px 10px;
-    background: #33a1ff;
+    background: $button;
     color: #FFF;
     font-size: 12px;
     font-weight: 600;
@@ -340,6 +203,7 @@ background-color: $background;
     float: left;
     list-style-type: none;
 }
-#shopbynav {
-    list-style-type: none;
-}
+
+@import 'header';
+@import 'content';
+@import 'footer';
